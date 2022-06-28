@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ *{margin: 0; padding: 0;}
+ li{list-style-type: none;}
+ h3,#join{margin: 20px 0 30px;}
+ #join{width:480px;border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+ .cols{padding: 5px;}
+ .cols li{display: inline-block;}
+ .col1{width: 120px;}
+ .col2 input,select{width: 200px; height: 28px;}
+ .email input{width: 100px; height: 25px;}
+ textarea{width: 328px; height: 100px;}
+ .hello{vertical-align: top;}
+ .buttons{width: 510px; text-align: right;}
+ .buttons button{margin-top:20px;padding: 8px 20px;}
+</style>
+</head>
+<body>
+    <h3>회원가입 폼</h3>
+    <form>
+        <ul id="join">
+        <ul class="cols">
+            <li class="col1">아이디</li>
+            <li class="col2"><input type="text"></li>
+        </ul>
+        <ul class="cols">
+            <li class="col1">비밀번호</li>
+            <li class="col2"><input type="password"></li>
+        </ul>
+        <ul class="cols">
+            <li class="col1">비밀번호 확인</li>
+            <li class="col2"><input type="password"></li>
+        </ul>
+        <ul class="cols">
+            <li class="col1">이름</li>
+            <li class="col2"><input type="text"></li>
+        </ul>
+        <ul class="cols">
+            <li class="col1">이메일</li>
+            <li class="email"><input type="text"/> @ </li>
+            <li><select>
+                <option>직접입력</option>
+                <option>naver.com</option>
+                <option>hanmail.com</option>
+                <option>gmail.com</option>
+                <option>nate.com</option>
+            </select></li>
+        </ul>
+
+        <ul class="cols">
+            <li class="col1">이메일 수신</li>
+            <li><input type="radio"/> 비수신
+                <input type="radio"/> 수신
+            </li>
+            </ul>
+
+        <ul class="cols">
+        <li class="col1">가입 경로</li>
+        <li><input type="checkbox"/> 친구추천
+            <input type="checkbox"/> 인터넷검색
+            <input type="checkbox" checked/> 기타
+        </li>
+        </ul>
+        <ul class="cols">
+            <li class="col1 hello">인사말</li>
+            <li class="col2"><textarea></textarea>
+            </li>
+            </ul>
+        </ul>
+            <div class="buttons">
+                <button type="submit">저장하기</button>
+                <button type="reset">취소하기</button>
+            </div>
+   
+    </form>
+
+</body>
+</html>

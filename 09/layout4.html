@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; text-align:center; box-sizing: border-box;}
+        header{height: 80px; border: 1px solid red;}
+
+        #top{height: 25px; border: 1px solid red;}
+        #top_menu{float:right; border: 1px solid red;}
+        #main_menu{height: 55px; border: 1px solid red;}
+
+        .box{width: 1000px; margin: 0 auto; border: 1px solid blue;}
+        .box:after{clear:both;}
+
+        #main{height:600px;border: 1px solid red;}
+        section{float: left; margin-top:50px; width: 750px; height: 200px; border: 1px solid red;}
+        aside{float:right; margin-top:50px; width: 230px; height: 200px; border: 1px solid red;}
+        #item{clear: both;}
+        .item1{display:inline-block;width: 200px; margin-top: 20px; height: 200px;border: 1px solid red;}
+        .item2{display:inline-block;width: 250px; margin-left: 10px; margin-top: 20px; height: 200px;border: 1px solid red;}
+
+  
+        footer{height: 100px;border: 1px solid red;}
+        #footer1{float: left; border: 1px solid red;}
+        #footer2{float:right; border: 1px solid red;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div class="box">
+                <div id="top_menu">상단 메뉴</div>
+            </div>
+        </div>
+        <div id="main_menu">
+        <div class="box">
+            <div id="logo_menu_search">로고 & 메인 메뉴 &검색</div>
+        </div>
+        </div>
+    
+    </header>
+
+    <div id="main">
+        <div class="box">
+            <section>메인 이미지</section>
+            <aside>사이드바 </aside>
+            <ul id="item">
+            <li class="item1">항목1</li>
+            <li class="item2">항목2</li>
+            <li class="item2">항목3</li>
+            <li class="item2">항목4</li>
+            </ul>
+         </div>
+    </div>
+
+    <footer>
+         <div class="box">
+            <div id="footer1">푸터1</div>
+            <div id="footer2">푸터1</div>
+         </div> 
+        </footer>
+</body>
+</html>

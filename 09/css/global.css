@@ -1,0 +1,69 @@
+header{height:166px;}
+.box{position:relative;width:1100px;margin:0 auto;}
+.box:after{content: "";display: block;clear: both;}
+
+/* Header영역 */
+#logo {float:left;margin:80px 0 0 60px;}
+#menu {float:right;text-align: right;margin-right: 20px;}
+#menu li {display: inline-block;}
+#top_menu li{margin:30px 0 0 10px;}
+#main_menu li{margin:50px 0 0 80px;font-size: 20px;font-weight: bold;}
+
+/* main영역 */
+#main_image{
+    height:312px;
+    background: url('../img/main_bg.png') no-repeat center top;
+    
+}
+#main_image .box{height:100%;}
+#main_image .box .btn_class{position: absolute;right:104px;bottom: 43px;}
+
+/* 사이드바 */
+aside{float: left; width:220px;padding-bottom: 70px;}
+aside .title1{padding:12px;background-color: #0ca9a3;color:#fff;font-size: 18px;}
+aside .comment{padding:20px 10px;line-height: 150%;}
+aside .search input{width:160px;height:30px;padding:0;border:1px solid #000;vertical-align: top;}
+aside .search button{width: 50px;height: 32px;padding:6px 10px;border:1px solid #000;}
+aside .title2{
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #ccc;
+}
+aside .list {margin:20px 0;}
+aside .list li {margin:15px 12px;}
+aside .reply {
+    padding: 12px;
+    border: 1px solid #0ca9a3;
+}
+aside .reply h2{font-size: 18px;margin:10px 0 15px;font-weight: bold;}
+aside .reply li{margin-top: 6px;}
+
+/* aside와 main을 main에서 70px떨어뜨려야함 */
+aside,#main{margin-top: 70px;}
+/* main영역 */
+#main{float:right; width: 840px;  margin-left: 35px;}
+#main1{float: left; width: 405px;}
+#main .title1{font-size: 18px; font-weight: bold; padding-bottom: 10px; border-bottom: 1px solid #000;}
+.latest{margin-top: 30px;}
+.items{font-size: 16px; padding-bottom: 17px;}
+.items .subject{display:inline; }
+.items .date{ display:inline; margin-left: 180px;}
+.title2{font-size: 18px; font-weight: bold; padding-top:33px;padding-bottom: 10px; border-bottom: 1px solid #000;}
+#main2{float: right; width: 400px; }
+#main2 img{width: 185px; height: 132px;}
+#main2 .subject{margin-top: 15px; font-weight: bold;}
+#main2 .date{margin-top: 10px;}
+.item1{float: left; margin-top: 30px;}
+.item2{float: right;margin-top: 30px;}
+
+
+footer{height: 260px;background-color: #05354e; color:#fff;}
+#bottom_menu ul{padding: 20px 0 0 100px; font-weight: bold; }
+#bottom_menu li{display: inline-block; margin-left: 35px;}
+#bottom_menu li:first-child{margin-left: 0;}
+footer .items{float:left; margin: 40px 0 0 100px;}
+footer h3{color: #0ca9a3; font-weight: bold; font-size: 19px;}
+footer .items ul{margin-top: 20px;}
+footer .items li{margin-top: 10px;}
+footer .items .phone{font-size: 25px;}

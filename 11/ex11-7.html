@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{display:flex; flex-direction:column; height: 300px; border: 1px solid red;}
+        /* flex-direction:row는 가로로 n등분
+        flex-direction:column은 세로로 n등분 */
+        /* flex-direction:row-reverse 좌우 순서가 반대로 바뀜
+        flex-direction:column-reverse 위아래 순서가 반대로 바뀜*/
+        .container div{width: 50%; height: 80px;}
+        .container div:first-child{background-color: lightgreen;}
+        .container div:nth-child(2){background-color:yellow;}
+        .container div:last-child{background-color: lightblue;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

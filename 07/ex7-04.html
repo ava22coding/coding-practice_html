@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red; border: 1px solid red;
+        }
+        /* span은 인라인 요소임 특정 단어에만 적용
+        div는 블럭요소임 한줄 전체 적용 */
+        div{
+            background-color: #eee;
+        }
+        /* display:~~요소를 주면 div를 인라인 요소처럼 사용 가능하며 span을 블럭 요소처럼 사용가능함 */
+        #text1{display: inline;}
+        #text2{display: block;}
+        /* block은 한줄 다 적용 */
+        #text3{display: inline-block;}
+        #text4{display: none;}
+        /* none은 span안의 글씨가 완전히 사라짐 */
+
+       
+    </style>
+</head>
+<body>
+    <h1>display 속성</h1>
+    <h3>1.display:inline</h3>
+    <div>글자1<span id="text1">안녕하세요!</span>글자2</div>
+    <h3>1.display:block</h3>
+    <div>글자1<span id="text2">안녕하세요!</span>글자2</div>
+    <h3>1.display:inline-block</h3>
+    <div>글자1<span id="text3">안녕하세요!</span>글자2</div>
+    <h3>1.display:none</h3>
+    <div>글자1<span id="text4">안녕하세요!</span>글자2</div>
+    <h3>1.display:속성 사용안함</h3>
+    <div>글자1<span>안녕하세요!</span>글자2</div>
+</body>
+</html>
