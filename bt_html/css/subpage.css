@@ -65,12 +65,12 @@ i .sub-banner-text {
   margin-left: 23px;
 }
 .sub-contents-view h3 {
-  margin-bottom: 30px;
   height: 58px;
   font-size: 24px;
   color: #2b2b2b;
   border-bottom: 1px solid #eaeaea;
 }
+.sub-contents-view .no-bdr{border-bottom: 0;}
 .sub-contents-view.sitemap {
   margin-left: 0;
 }
@@ -117,6 +117,7 @@ i .sub-banner-text {
 }
 
 .bt_intro {
+  margin-top: 30px;
   color: #495057;
 }
 .bt_intro .definition {
@@ -178,15 +179,36 @@ i .sub-banner-text {
   padding-top: 9px;
   color: #339af0;
 }
-/* 브레인트레이너 소개 (브레인트레이너란?)*/
-.about_bt{padding: 40px 150px; text-align: center; background: url("../images/subpage/ico_quotationmark_start.png") no-repeat center top,url("../images/subpage/ico_quotationmark_end.png") no-repeat center bottom;}
-.about_bt h4 span{position: relative;}
-.about_bt h4 span::after{content: ""; position: absolute; left: 0;bottom: 0;  width:100%; height:11px;background-color: #ffd43b; z-index: -1;}
-.about_bt p{margin-top: 15px; font-size: 15px; color: #737373;}
+/* 브레인트레이너 소개 */
+.about_bt {padding:40px 150px;text-align: center;background: url('../images/common/ico_quotation_start.png') no-repeat center top, url('../images/common/ico_quotation_end.png') no-repeat center bottom;
+}
+.about_bt h4 span {position: relative;}
+.about_bt h4 span:after{content: "";position:absolute;left:0;bottom:0; width:100%;height:11px;background-color: #ffd43b;z-index:-1;}
+.about_bt p{margin-top: 15px;font-size: 15px;color:#737373;}
 
 .bt_intro .table_res {border:0;border-top: 1px solid #dee2e6; }
 .bt_intro .table_res dt{justify-content: center;padding: 5px 10px;font-weight: 500;flex: 0 0 160px;border-right: 0;text-align: center;line-height: 21px;}
 .bt_intro .table_res dd{justify-content: center;padding: 6px 8px;}
+
+.scs-item{
+  display: block;
+  margin:-12px -15px;
+  padding:15px 0;
+  text-align: left;
+}
+.scs-item:hover{background-color: #eee;}
+.scs-item:after{content:"";display: block;clear: both;}
+.scs-item img{float:left;margin-right: 15px;}
+.scs-item h4 {color:#fd9f27;}
+.scs-item p {margin-top:15px;color:#868e96;font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  height: 58px;
+}
 
 .exam_standard a {
   text-decoration: underline;
@@ -434,6 +456,40 @@ h3 + .text_warning {margin-top: 60px}
   padding:14px 24px;
 }
 
+/* 합격수기 상세 */
+.scs_story_detail .prog_name{
+  padding:20px 0 20px 22px;
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+}
+.scs_story_detail span:first-of-type{
+  color:#4dabf7;
+  font-size: 14px;
+  margin-right: 15px;
+}
+.scs_story_detail .prog_name .txt{
+  margin-left: 15px;
+}
+.scs_story_detail .info{position: relative; height:170px;padding:14px 0 14px 148px;font-size: 13px;color:#868e96;border-bottom: 1px solid #eaeaea;}
+.scs_story_detail .info a{color: #868e96;text-decoration: underline;}
+.scs_story_detail .info img{position: absolute;left:2px;top:14px;}
+.scs_story_detail .info .top{float: left;width:100%;padding:13px 0;border-bottom: 1px solid #eaeaea;}
+.scs_story_detail .info .top li{
+  display: inline-block;
+  line-height: 15px;
+}
+.scs_story_detail .info .top li:nth-child(1){
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #eaeaea;
+}
+.scs_story_detail .info .btm{float: left;display:flex;padding-top: 13px;line-height: 21px;}
+.scs_story_detail .content{padding-bottom: 50px;border-bottom: 1px solid #eaeaea;}
+.scs_story_detail .content p{margin-top:20px;color:#2b2b2b;font-size: 15px;text-indent: 7px;font-size: 15px;line-height: 18px;}
+.scs_story_detail .content .number{margin:40px 0 20px;text-indent: 0;}
+.scs_story_detail .content .number.top{margin-top: 20px;}
+
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 1023px) {
   .sub-contents .inner.memberjoin{
@@ -543,6 +599,16 @@ h3 + .text_warning {margin-top: 60px}
   .rtf .institution .ist_box .title {
     font-size: 16px;
   }
+  .scs_story_detail .info {height:auto;}
+  .scs_story_detail .prog_name .txt{
+    display: block;
+    max-width: 510px;
+    margin-top: 10px;
+    margin-left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* 말줄임 적용 */
+  }
 }
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
 @media all and (max-width: 479px) {
@@ -606,7 +672,13 @@ h3 + .text_warning {margin-top: 60px}
     padding-top: 15px;
     text-align: center;
   }
-  
+  .scs_story_detail .prog_name .txt{display: block;margin-left: 0;margin-top: 5px;}
+  .scs_story_detail .info{height:auto;padding-left: 94px;}
+  .scs_story_detail .info .top li {margin-top: 20px;}
+  .scs_story_detail .info .top li:first-of-type{margin-top: 0;border-right: 0;}
+  .scs_story_detail .info .btm {margin-left: -92px;padding-top: 30px;}
+    .scs_story_detail .info img{width: 22%;}
+
   /* 반응형 table */
   input[type=text]{max-width: 100%;}
   .memberjoin input {margin-right: 0;}
@@ -759,4 +831,9 @@ h3 + .text_warning {margin-top: 60px}
   .pass_announce .result_box .comment {
     padding: 0 25px;
   }
+  .scs-item{margin:-5px;}
+}
+
+@media print {
+  header,.sub-banner,.lnb{display: none;}
 }
